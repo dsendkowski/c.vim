@@ -297,3 +297,9 @@ syn keyword cFunction sched_get_priority_min sched_rr_get_interval
 
 " sys/epoll.h
 syn keyword cFunction epoll_ctl epoll_create
+
+" sys/mman.h
+syn keyword cFunction mmap mprotect munmap msync mlock munlock mlockall
+syn keyword cFunction munlockall madvise mincore minherit mquery posix_madvise
+syn keyword cFunction shm_open shm_unlink shm_mkstemp
+
