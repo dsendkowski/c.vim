@@ -182,10 +182,6 @@ syn keyword cFunction pthread_sigmask sigsuspend sigmask killpg siginterrupt
 syn keyword cFunction sigaltstack sigblock sigpause sigsetmask sigvec thrkill
 syn keyword cFunction sigwait psignal
 
-" netdb.h
-
-" stddef.h
-
 " time.h
 syn keyword cFunction times sysconf asctime clock ctime difftime gmtime localtime
 syn keyword cFunction mktime strftime time strptime asctime_r ctime_r gmtime_r
@@ -291,12 +287,13 @@ syn keyword cFunction uselocale
 syn keyword cFunction setjmp longjmp sigsetjmp siglongjmp _setjmp _longjmp
 
 " ncurses.h
-syn keyword cFunction name tparm NCURSES_WRAPPED_VAR NCURSES_EXPORT_VAR
-syn keyword cFunction _nc_timed_wait NCURSES_EXPORT printw GCC_PRINTFLIKE
-syn keyword cFunction GCC_SCANFLIKE vid_attr is_leaveok getyx while leaveok wmove
-syn keyword cFunction PAIR_NUMBER wgetch
+syn keyword cFunction name tparm _nc_timed_wait printw vid_attr is_leaveok
+syn keyword cFunction getyx while leaveok wmove wgetch getcchar
 
 " sched.h
 syn keyword cFunction sched_setparam sched_getparam sched_setscheduler
 syn keyword cFunction sched_getscheduler sched_yield sched_get_priority_max
 syn keyword cFunction sched_get_priority_min sched_rr_get_interval
+
+" sys/epoll.h
+syn keyword cFunction epoll_ctl epoll_create
